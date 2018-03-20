@@ -1,0 +1,60 @@
+
+
+JSON
+ 
+Array of Pokemon objects with {Index, Name, Sizes, Types, Stats {HP, Def, Sp. Def, Atk, Sp. Atk, Speed, Total}, Legendary, Generation}
+ 
+Sample:
+{“results” : [	
+	{
+		“ID”: 25, 
+		“Name” : “Pikachu”, 
+		“Sizes” : “None”, 
+		“Type” : “Electric”,
+		“HP” : 35, 
+		“Defense” : 40, 
+		“Attack” : 55,
+		“Sp. Def.” : 50,
+		“Sp Atk.” : 50,
+		“Speed” : 90,
+		“Total” : 320
+		“Legendary” : “You wish”,
+		“Generation” : 1
+	},
+ 	{
+		“ID”: 493, 
+		“Name” : “Arceus”, 
+		“Sizes” : “None”, 
+		“Type” : “Normal”,
+		“HP” : 120, 
+		“Defense” : 120, 
+		“Attack” : 120,
+		“Sp. Def.” : 120,
+		“Sp Atk.” : 120,
+		“Speed” : 120,
+		“Total” : 720
+		“Legendary” : “Hell yeah!”,
+		“Generation” : 4
+	}
+	]
+}
+
+ SQL
+	Pros:
+		1. More compact
+		2. Flexible, easier to make changes to data
+		3. Enforces relationships
+	Cons:
+		1. Need to plan ahead
+		2. Not good for big records (unable to disperse across multiple servers)
+		3. Not good for drawing style datatype
+ 
+Json
+	Pros:
+		1. Don't need to plan ahead
+		2. Spread data over wide number of computers (scalability)
+		3. Easy to look up info (no prior knowledge of database structure needed)
+	Cons:
+		1. Less compact
+		2. Difficult to change data
+		3. Difficult to classify

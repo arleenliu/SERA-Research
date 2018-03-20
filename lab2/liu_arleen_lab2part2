@@ -1,0 +1,3 @@
+Inner joins only take the values from the specified columns where each corresponding row has a value that is not null. Meanwhile, outer joins take every single value from both columns regardless of what the value of their corresponding row in the other table specified.
+Some joins finish at different speeds because they have a different amount of values to print out, and the more values that get printed out, the more time it takes.
+Outer joins are slower because they print out every single value, including additional columns, which will be more than the more selective inner join.

@@ -1,0 +1,1 @@
+The flea data set [Hand, et a;. 1994; Lubis, 1962] contains the measurements on three species of flea beetle: Chaetocnema conicinna, Chaetocnema heikertingeri, and Chaetocnema heptapotamica.  The features for the classifier are the maximal width of the aedeagus in the forepart (microns) and the front angle of the aedeagus (units are 7.5 degrees)

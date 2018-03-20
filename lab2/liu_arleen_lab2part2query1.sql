@@ -1,0 +1,1 @@
+SELECT top 10* FROM Comments c JOIN Users u on u.Id = c.userId;

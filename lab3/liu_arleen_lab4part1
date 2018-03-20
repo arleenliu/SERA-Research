@@ -1,0 +1,32 @@
+import csv
+import scipy as sp
+import bokeh as bk
+import matplotlib as mpl
+import numpy as np
+import matplotlib.pyplot as plt
+import datetime as dt
+from matplotlib import dates
+import re
+
+from bokeh.plotting import *
+from bokeh.models import Range1d, OpenURL, TapTool, HoverTool, ColumnDataSource, DatetimeTickFormatter
+
+with open('/Users/arleenliu/Downloads/lab4/flea.csv') as csvfile:
+	readCSV = csv.reader(csvfile)
+	array1 = []
+	headers = []
+	x=False
+	for row in readCSV:
+		array2 = []
+		if(x==False):
+			headers.append(row)
+			x=True
+		else:	
+			for i in row:
+				array2.append(i)
+			array1.append(array2)
+	arr1 = np.array(array1)
+	heads = np.array(headers)
+
+	print (arr1)
+
